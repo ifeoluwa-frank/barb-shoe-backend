@@ -54,7 +54,6 @@ class InventoryController extends Controller
             'inventory' => $inventory,
         ], 201);
     }
-
     public function index()
     {
         $inventory = Inventory::all();
