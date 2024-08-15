@@ -25,4 +25,9 @@ class Inventory extends Model
         'color' => 'array'
     ];
 
+    public function cartItems(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(CartItem::class);
+    }
+
 }
